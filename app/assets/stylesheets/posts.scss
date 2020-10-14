@@ -1,3 +1,198 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Header
+
+header {
+    background-color: lightgreen;
+    height: 48px;
+    padding: 8px 0;
+    display: flex;
+}
+
+.header-title {
+    width: 60%;
+    font-size: 24px;
+    color: purple;
+    margin-left: 32px;
+}
+
+.header-nav {
+    width: 30%;
+    margin-right: 32px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 32px;
+    list-style: none;
+}
+
+// Main
+.main-content {
+    background-color: white;
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-title {
+    width: 160px;
+    text-align: center;
+    font: bold;
+    font-size: 24px;
+    padding-bottom: 8px;
+    border-bottom: double 1px lightsalmon;
+    margin: 16px 0 8px 0px;
+}
+
+.content-contributor {
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.content {
+    background-color: lightcyan;
+    height: 72px;
+    width: 50%;
+    margin-top: 32px;
+    border: solid 1px blueviolet;
+    text-align: center;
+}
+
+.tag-list {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.tag-list li {
+    margin-left: 8px;
+}
+
+//Show
+.show-box {
+    height: 1200px;
+}
+
+.show-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box {
+    background-color: white;
+    height: 240px;
+    width: 880px;
+    border: solid 1px lightblue;
+    margin-top: 24px;
+}
+
+.content-header {
+    display: flex;
+}
+
+.show-title {
+    font-size: 24px;
+    margin: 8px;
+    border-bottom: solid 1px lightblue;
+}
+
+.show-name, .show-tag {
+    font-size: 16px;
+    color: lightgray;
+    margin: 8px;
+}
+
+.show-text {
+    margin: 16px 8px;
+}
+
+.show-images {
+    margin-top: 8px;
+    width: 880px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.show-figure img{
+    width: 256px;
+    height: 120px;
+}
+
+.show-comments {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.comment-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-text {
+    display: block;
+    width: 600px;
+}
+
+.send {
+    display: block;
+    width: 200px;
+    margin: 8px;
+}
+
+//New
+.new {
+    height: calc(100vh - 72px);
+}
+
+.new-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-image {
+    margin-top: 16px;
+}
+
+.new-comment {
+    width: 600px;
+    height: 50%;
+    margin-top: 8px;
+}
+
+.form-submit {
+    display: block;
+    width: 200px;
+    margin: 8px;
+}
+
+// Footer
+footer {
+    background-color: lightgray;
+    height: 24px;
+    color: gray;
+    text-align: center;
+}
