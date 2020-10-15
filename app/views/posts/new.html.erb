@@ -1,5 +1,16 @@
 <div class="new">
   <div class="new-content">
+    <%= form_with(model: @post, class: "new-form", local: true) do |form| %>
+      <p class="list-title">投稿する</p>
+      <%= form.text_field :title, placeholder: "Title" %>
+      <input type="file" class="form-image">
+      <%= form.text_area :content, placeholder: "Comment", class: "new-comment", cols: 30, rows: 10 %>
+      <%= form.submit "送信する" , class: "form-submit" %>
+    <% end %>
+  </div>
+
+
+  <div class="new-content">
     <form class="new-form">
       <p class="list-title">投稿する</p>
       <input type="file" class="form-image">
