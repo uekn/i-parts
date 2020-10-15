@@ -3,14 +3,12 @@
     
     <div class="content-box">
       <div class="content-header">
-        <h1 class="show-title">φ20のSS400材段つけ加工について</h1>
+        <h1 class="show-title"><%= @post.title %></h1>
         <div class="show-name">投稿者：Uemura</div>
         <div class="show-tag">Tags: 切削 旋盤加工 SS400</div>
       </div>
       <div class="show-text">
-        図のような丸棒の段つけ加工を旋盤にて行いたいです。
-        添付の工程表の条件で加工を行うのですが、1回あたりの加工時間を30秒縮めたいと考えております。
-        φ14部分の表面性状をRa1.6以内に収めつつ、加工速度を上げる手段としてどのようなことが挙げられるでしょうか？
+        <%= @post.content %>
       </div>
     </div>
 

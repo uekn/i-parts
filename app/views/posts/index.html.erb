@@ -4,7 +4,7 @@
     <% @posts.each do |post| %>
         <div class="content">
             <div class="content-title">
-                <h2><%= link_to post.title, posts_path %></h2>
+                <h2><%= link_to post.title, post_path(post.id), method: :get %></h2>
             </div>
             <div class="content-contributor">投稿者：Uemura</div>
             <div class="content-tag">
