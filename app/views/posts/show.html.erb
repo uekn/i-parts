@@ -13,15 +13,11 @@
     </div>
 
     <div class="show-images">
-      <div class="show-figure">
-        <img src="/images/sample1.png" alt="image">
-      </div>
-      <div class="show-figure">
-        <img src="/images/sample1.png" alt="image">
-      </div>
-      <div class="show-figure">
-        <img src="/images/sample1.png" alt="image">
-      </div>
+      <% if @post.images.attached? %>
+        <% @post.images.each do |image| %>
+          <%= image_tag image, class: 'show-figure' %>
+        <% end %>
+      <% end %>
     </div>
 
   </div>
@@ -33,8 +29,8 @@
     <div class="comment-content">
       <p>Uemura: 使用工具をハイスから超硬に変えて、切削速度を上げて加工してみましょう。</p>
     </div>
-    <div class="show-figure">
-      <img src="/images/sample1.png" alt="image">
+    <div>
+      <img class="show-figure" src="/images/sample1.png" alt="image">
     </div>
   </div>
     
