@@ -106,7 +106,18 @@ header {
 .show-name, .show-tag {
     font-size: 16px;
     color: lightgray;
-    margin: 8px;
+    margin: 16px 8px;
+}
+
+.show-tag-list {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.show-tag-list li {
+    margin: 0 4px;
 }
 
 .show-text {
@@ -165,6 +176,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.form-title {
+    margin: 8px 0;   
 }
 
 .new-form {

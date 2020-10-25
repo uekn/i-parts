@@ -2,8 +2,9 @@
   <div class="new-content">
     <%= form_with(model: @post, class: "new-form", local: true) do |form| %>
       <p class="list-title">投稿する</p>
-      <%= form.text_field :title, placeholder: "Title" %>
+      <%= form.text_field :title, class:"form-title", placeholder: "Title" %>
       <%# <p class="file-select">投稿画像を選択</p> %>
+      <%= form.text_field :tag_list, value: @post.tag_list.join(","), placeholder: "Tag1, Tag2,..." %>
       <%= form.file_field :images, class: "file-select", multiple: true %>
       <%= form.text_area :content, placeholder: "Comment", class: "new-comment", cols: 30, rows: 10 %>
       <%= form.submit "送信する" , class: "form-submit" %>
