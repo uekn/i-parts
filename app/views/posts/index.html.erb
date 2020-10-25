@@ -10,9 +10,9 @@
             <div class="content-tag">
                 <ul class="tag-list">
                     Tags:
-                    <li>切削</li>
-                    <li>旋盤加工</li>
-                    <li>SS400</li>
+                    <% post.tag_list.each do |tag| %>
+                        <li><%= tag %></li>
+                    <% end %>
                 </ul>
             </div>
         </div>

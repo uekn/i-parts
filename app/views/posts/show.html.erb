@@ -5,7 +5,14 @@
       <div class="content-header">
         <h1 class="show-title"><%= @post.title %></h1>
         <div class="show-name">投稿者：Uemura</div>
-        <div class="show-tag">Tags: 切削 旋盤加工 SS400</div>
+        <div class="show-tag">
+          <ul class="show-tag-list">
+            Tags:
+              <% @post.tag_list.each do |tag| %>
+                <li><%= tag %></li>
+              <% end %>
+          </ul>
+        </div>
       </div>
       <div class="show-text">
         <%= @post.content %>
